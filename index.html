@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f3e04be5d1.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+        </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Music App</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="name">
+            <h1>Walking The Wire</h1>
+            <p>Imagine Dragons</p>
+        </div>
+        <div id="song">
+        <img src="img/img1.jpg" alt="Walking the wire">
+        <div class="control">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-undo-alt"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-list"></i>
+        </div>
+        <div class="duration">
+            <div class="start">0.00</div>
+            <div class="end">3.51</div>
+        </div>
+        <div class="progress">
+            <input id="range" type="range" min="0" max="100" value="0" />
+            <div class="line"></div>
+        </div>
+        <div id="btns">
+            <i id="prev" class="fas fa-backward"></i>
+            <i id="play" class="fas fa-play-circle fa-5x"></i>
+            <i id="next" class="fas fa-forward"></i>
+        </div>
+        
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
